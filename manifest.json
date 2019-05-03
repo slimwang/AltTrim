@@ -1,0 +1,23 @@
+{
+    "name": "AltTrim",
+    "version": "1.0",
+    "description": "一键删除剪贴板换行符",
+    "permissions": [
+        "activeTab",
+        "declarativeContent",
+        "clipboardWrite",
+        "clipboardRead",
+        "storage"
+    ],
+    "options_page": "options.html",
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "page_action": {
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2
+}

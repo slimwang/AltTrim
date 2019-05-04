@@ -19,5 +19,13 @@
     "page_action": {
         "default_popup": "popup.html"
     },
+    "commands":{
+        "AltTrim": {
+            "suggested_key": {
+                "default": "Alt+T"
+            },
+            "description": "删除换行"
+        }
+    },
     "manifest_version": 2
 }

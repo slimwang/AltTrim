@@ -1,4 +1,5 @@
-chrome.runtime.onInstalled.addListener(function () {
+chrome.commands.onCommand.addListener(function (command) {
+    console.log('Command:', command);
     let t = document.createElement("textarea");
     document.body.appendChild(t);
     t.focus();
@@ -15,14 +16,4 @@ chrome.runtime.onInstalled.addListener(function () {
     document.execCommand('SelectAll');
     document.execCommand("Copy", false, null);
     document.body.removeChild(copyDiv);
-
-    chrome.declarativeContent.onPageChanged.removeRules(undefined, function () {
-        chrome.declarativeContent.onPageChanged.addRules([{
-            conditions: [new chrome.declarativeContent.PageStateMatcher({
-                pageUrl: { hostEquals: 'developer.chrome.com' },
-            })
-            ],
-            actions: [new chrome.declarativeContent.ShowPageAction()]
-        }]);
-    });
 });

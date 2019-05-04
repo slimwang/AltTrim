@@ -7,7 +7,7 @@
 
 # 安装
 通过 chrome web store 安装:  
-[chrome web store](https://chrome.google.com/webstore/detail/alttrim/kjnhgfdbedcfeppnlijlnolcgablfcci?hl=en&gl=001)
+[chrome web store](https://chrome.google.com/webstore/detail/alttrim/degegfodgkcbiplngnpdajicbbcklgcd)
 
 或者手动安装:  
 *因为最新版本 Chrome 禁用了拖拽式安装, 所以通过拖拽来安装 crx 文件的方式现在并不适用*  

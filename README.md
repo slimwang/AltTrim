@@ -2,7 +2,7 @@
 而我们复制时会把 pdf 中的换行符也复制下来, 这样就需要手动把换行删掉, 再插入空格, 否则就会被逐行翻译, 效果很差  
 于是便有了 AltTrim
 
-# AltTrim
+# AltTrim - Chrome Extension
 一键删除剪贴板内的换行符
 
 # 安装

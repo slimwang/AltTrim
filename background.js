@@ -6,22 +6,15 @@ chrome.runtime.onInstalled.addListener(function () {
     let clipboardText = t.value; //this is your clipboard data
     trimedText = clipboardText.replace(/[\n\r]+/g, '');
     t.innerHTML = trimedText;
-    t.focus();
-    document.execCommand('SelectAll');
-    document.execCommand("Copy", false, null);
     document.body.removeChild(t);
 
-    let copyDiv = document.createElement('div');
-    copyDiv.contentEditable = true;
+    let copyDiv = document.createElement('textarea');
     document.body.appendChild(copyDiv);
     copyDiv.innerHTML = trimedText;
-    copyDiv.unselectable = "off";
     copyDiv.focus();
     document.execCommand('SelectAll');
     document.execCommand("Copy", false, null);
-    // document.body.removeChild(copyDiv);
-
-    console.log(trimedText);
+    document.body.removeChild(copyDiv);
 
     chrome.declarativeContent.onPageChanged.removeRules(undefined, function () {
         chrome.declarativeContent.onPageChanged.addRules([{

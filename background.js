@@ -4,7 +4,7 @@ chrome.commands.onCommand.addListener(function (command) {
     t.focus();
     document.execCommand("paste");
     let clipboardText = t.value;
-    trimedText = clipboardText.replace(/[\n\r]+/g, '');
+    trimedText = clipboardText.replace(/[\n\r]+/g, ' ');
     t.innerHTML = trimedText;
     document.body.removeChild(t);
 

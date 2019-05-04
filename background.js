@@ -1,5 +1,4 @@
 chrome.commands.onCommand.addListener(function (command) {
-    console.log('Command:', command);
     let t = document.createElement("textarea");
     document.body.appendChild(t);
     t.focus();
